@@ -1,0 +1,450 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 1rem;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+/* Header Section */
+header {
+  margin-bottom: 1.5rem;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Red badge */
+.notification-badge {
+  background-color: #ff3b3b;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.welcome {
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tab {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.tab.active {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+
+/* Priority Task Section */
+.priority-task {
+  margin: 1.5rem 0;
+  background: #28a745;
+  padding: 1.5rem;
+  border-radius: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.priority-task .task-card-header {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  background: #ffffff;
+  border-radius: 10px;
+  height: 10px;
+  margin: 1rem 0;
+}
+
+.progress {
+  background: #FFD700;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.progress-percent {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+/* Task Stats Section */
+.task-stats {
+  margin: 1.5rem 0;
+}
+
+.stat-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1f1f;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.stat-icon {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  color: #ffffff;
+}
+
+.stat-info {
+  flex: 1;
+}
+
+.stat-info h3 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.stat-info p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #4CAF50;
+}
+
+.stat-arrow {
+  font-size: 1.5rem;
+  color: #aaaaaa;
+}
+
+/* Task Form Styles */
+.task-form {
+  background-color: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 2rem auto;
+  color: #ffffff;
+}
+
+.task-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.task-form input[type="text"],
+.task-form input[type="date"] {
+  width: 80%;
+  padding: 0.5rem;
+  margin: 0 auto 1rem auto;
+  display: block;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #2b2b2b;
+  color: #ffffff;
+  outline: none;
+}
+
+.task-form .checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.task-form .checkbox-container label {
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.task-form button {
+  background: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.task-form .button-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.task-form button:hover {
+  background: #45a049;
+}
+
+/* Task Item Styles */
+.task-item {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.task-item h4 {
+  margin-bottom: 0.5rem;
+}
+
+.task-item .done-label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.task-item button.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.task-item button.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.profile-header .profile-avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-info {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-info .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-info .form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+/* Bottom Navigation */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1f1f1f;
+  padding: 0.5rem 0;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-btn {
+  font-size: 1.5rem;
+  color: #ffffff;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-btn:hover {
+  color: #4CAF50;
+}
+
+/* Task Stats Update: keep text white for numeric stats */
+.stat-info p#totalTasksCount,
+.stat-info p#completedTasksCount,
+.stat-info p#totalProjectsCount {
+  color: #ffffff;
+}
+
+/* Flash Green Animation */
+.flash-green {
+  animation: flashHighlight 1s ease-in-out;
+}
+
+@keyframes flashHighlight {
+  0% { background-color: #d4edda; }
+  100% { background-color: transparent; }
+}
+
+/* Logout Button Styling */
+button.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Auth Pages */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #121212;
+}
+
+.auth-box {
+  background-color: #1f1f1f;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.auth-box h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: white;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+
+.auth-box button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-box button:hover {
+  background-color: #45a049;
+}
+
+.auth-box p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.auth-box a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-box p.auth-toggle {
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 1.5rem; 
+  margin: 0;
+  background-color: #121212;
+  overflow: hidden;
+}
+
+
+
+body.auth-active {
+  overflow: hidden;
+}
+
