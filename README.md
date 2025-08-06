@@ -1,4 +1,4 @@
-# DiplomskaNaloga
+
 
 # Productivity Mobile-Web Application – Diploma Project
 
